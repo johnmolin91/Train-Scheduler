@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduler</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<h1>Your Train Schedule</h1>
+
+<h2>Current Train Schedule</h2>
+
+<div class="current">
+
+<table id="tableId", border="1">
+	<tr>
+		<th>Train Name</th>
+		<th>Destination</th>
+		<th>Frequency (min)</th>
+		<th>Next Arrival</th>
+		<th>Minutes Away</th>
+	</tr>
+	<tr>
+		<td id="nameInfo"></td>
+		<td id="destinationInfo"></td>
+		<td id="frequencyInfo"></td>
+		<td id="nextInfo"></td>
+		<td id="minutesInfo"></td>
+	</tr>
+</table>
+	
+
+
+
+<!-- <div id="name">
+<h3>Train Name</h3>
+<div id="nameInfo">
+</div>
+</div>
+
+<div id="destination">
+<h3>Destination</h3>
+<div id="destinationInfo">
+</div>
+</div>
+
+<div id="frequency">
+<h3>Frequency (min)</h3>
+<div id="frequencyInfo">
+</div>
+</div>
+
+<div id="next">
+<h3>Next Arrival</h3>
+<div id="nextInfo">
+</div>
+</div>
+
+<div id="minutes">
+<h3>Minutes Away</h3>
+<div id="minutesInfo">
+</div>
+</div> -->
+
+</div>
+
+<div class="forms">
+
+<h2>Add Train</h2>
+
+<form>
+	Train Name:</br>
+	<input id="inputName" type="text" name="addName">
+</form>
+
+<form>
+	Destination:</br>
+	<input id="inputDestination" type="text" name="addDestination">
+</form>
+
+<form>
+	First Train Time:</br>
+	<input id="inputFirst" type="text" name="addFirst">
+</form>
+
+<form>
+	Frequency:</br>
+	<input id="inputFrequency" type="text" name="addFirst">
+</form>
+
+<input id="submitInfo" type="submit" name="submit">
+
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCe9h_aa0gUm7EiD88fGCIe-Fmtxg91BAs",
+    authDomain: "train-scheduler-b856f.firebaseapp.com",
+    databaseURL: "https://train-scheduler-b856f.firebaseio.com",
+    projectId: "train-scheduler-b856f",
+    storageBucket: "train-scheduler-b856f.appspot.com",
+    messagingSenderId: "588133106534"
+  };
+  firebase.initializeApp(config);
+
+var database = firebase.database();
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<script type="text/javascript" src="assets/javascript/logic.js"></script>
+
+</body>
+</html>
